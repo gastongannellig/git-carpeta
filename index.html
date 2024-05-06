@@ -20,12 +20,22 @@
                 <a href="#">INICIO</a>
                 <a href="./pages/contacto.html">CONTACTO</a>
                 <a href="./pages/mapa.html">MAPA</a>
-                <a href="#">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-list-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M18.5 18.5l2.5 2.5" /><path d="M4 6h16" /><path d="M4 12h4" /><path d="M4 18h4" /></svg>
-                </a>
-                <a href="./pages/login.html">
+                <a href="/pages/login.html">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-login-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 8v-2a2 2 0 0 1 2 -2h7a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-7a2 2 0 0 1 -2 -2v-2" /><path d="M3 12h13l-3 -3" /><path d="M13 15l3 -3" /></svg>
                 </a>
+                <div class="search-box">
+                    <button class="btn-search"><i class="fas fa-search"></i>
+                        <div class="svg-container">
+                            <svg xmlns="http://www.w3.org/2000/svg"  width="34"  height="34"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-list-search">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <path d="M15 15m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                <path d="M18.5 18.5l2.5 2.5" />
+                                <path d="M4 6h16" /><path d="M4 12h4" /><path d="M4 18h4" />
+                            </svg>  
+                        </div>
+                    </button>
+                    <input type="text" class="input-search">
+                </div>
             </nav>
     </header>            
 
@@ -52,25 +62,25 @@
 
 
     <section class="section-dos background-section" id="down"> <!--seccion 2-->
-                <nav class="guia-mapa">
-                    <a href="#">TIENDAS</a>
-                    <a href="#">FARMACIAS</a>
-                    <a href="#">RESTAURANTES</a>
-                    <a href="#">CAMBIOS</a>
-                </nav>
+                <nav class="guia-mapa"> <!--BOTONES QUE INDIQUEN LUGARES EN EL MAPA-->
+                    <a href="">TIENDAS</a>
+                    <a href="">FARMACIAS</a>
+                    <a href="">RESTAURANTES</a>
+                    <a href="">CAMBIOS</a>
+                </nav><!--fin BOTONES QUE INDIQUEN LUGARES EN EL MAPA-->
 
                 
-                    <form action="#" class="mapa-busqueda">
+                    <form action="#" class="mapa-busqueda"> <!--barra de búsqueda linkeada con el maps-->
                         <img src="./assets/map.svg" alt="logo-de-mapa">
                         <input class="searchbar w-sm-100" type="search" name="search" pattern=".*\S.*" required placeholder="_____________">
-                    </form>
+                    </form> <!-- fin barra de búsqueda linkeada con el maps-->
 
                 <div class="mapa-integrado">
                         <div class="map-container">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.7491320761114!2d-56.15380091685826!3d-34.912744624516854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f810b5448cccd%3A0xf144537101334b8c!2sHotel%20Montevideo%20The%20Leading%20Hotels%20of%20the%20World!5e0!3m2!1ses-419!2suy!4v1712948259867!5m2!1ses-419!2suy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <a href="#" class="buttonmap-integ">Mirar en Google Maps</a>
-                </div>
+                        <a href="https://maps.app.goo.gl/W372cteiLHezisaJ9" target="_blank" class="buttonmap-integ">Mirar en Google Maps</a>
+                </div> 
                     
                 
 
@@ -87,7 +97,7 @@
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
                 <path d="M14 9.75a3.016 3.016 0 0 0 -4.163 .173a2.993 2.993 0 0 0 0 4.154a3.016 3.016 0 0 0 4.163 .173" />
-              </svg> GUIDEMTV S.A.  2024 ALL RIGHTS RESERVED</p>
+                </svg> GUIDEMTV S.A.  2024 ALL RIGHTS RESERVED</p>
         </div>
 
         <div class="iconft">
@@ -110,6 +120,6 @@
                     </svg></a>
             </div>
     </footer>
-    
+
 </body>
 </html>

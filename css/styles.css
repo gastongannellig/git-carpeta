@@ -98,6 +98,7 @@ header {
 }
 
 header h1 {
+    display: flex;
     color: var(--blanco);
     text-align: left;
     font-size: 3rem;
@@ -119,9 +120,9 @@ header nav a:hover {
     color: var(--secundario)
 }
 
+
 header h1 img {
     flex-direction: row;
-    align-items: right;
     width: 2.8rem;
 }
 
@@ -152,6 +153,68 @@ header nav a svg {
     }
 }
 
+.navegacion-principal a:nth-child(4) {
+    padding-right: 1.2rem;
+}
+
+/*SEARCH*/
+
+    .search-box{
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+    .input-search{
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        transition: all .5s ease-in-out;
+        background-color: var(--primario);
+    }
+    .input-search::placeholder{
+        color:rgba(255,255,255,.5);
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+    }
+    .btn-search{
+        width: 60px;
+        height: 50px;
+        border-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color:#ffffff ;
+        background-color:var(--primario);
+        pointer-events: painted;  
+    }
+    .btn-search:focus ~ .input-search{
+        width: 300px;
+        border-radius: 0px;
+        background-color: var(--primario);
+        border-bottom:1px solid rgba(255,255,255,.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+    .input-search:focus{
+        width: 300px;
+        border-radius: 0px;
+        background-color: var(--primario);
+        border-bottom:1px solid rgba(255,255,255,.5);
+        transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+    }
+    
+    
+
+
+/*SEARCH FIN*/
 
 
 /*SECTION 1*/
@@ -355,7 +418,6 @@ header nav a svg {
     padding: 1rem 0;
     font-size: 2rem;
     text-decoration: none;
-    text-transform: uppercase;
     border: none;
     border-radius: 2rem;
     width: 90%;
@@ -363,6 +425,7 @@ header nav a svg {
     border: none;
     touch-action: manipulation;
     transition: .5s;
+    border-color: var(--blanco)
 }
 @media (min-width: 940px) {
     .searchbar {
@@ -370,7 +433,6 @@ header nav a svg {
     }
 }
 .searchbar:hover {
-    cursor: pointer;
     background-color: var(--secundario);
     color: var(--blanco)
 }
@@ -470,7 +532,7 @@ footer {
 
 
 .copy {
-    justify-content: center;
+    text-align: center;
     
 }
 .copy p {
@@ -608,7 +670,7 @@ textarea { resize: none; }
 
 /*MAPA PAGINA*/
 
-.container {
+.container-map {
     display: flex;
     flex-direction: column;
     margin: 2rem auto;
@@ -617,7 +679,7 @@ textarea { resize: none; }
 }
 
 @media (min-width: 940px) {
-    .container {
+    .container-map {
         display: flex;
         width: auto;
         justify-content: center;
@@ -626,7 +688,7 @@ textarea { resize: none; }
     }
 }
 
-.container h1 {
+.container-map h1 {
     text-align: center;
     font-size: 2.5rem;
     line-height: 1.5rem;
@@ -636,7 +698,7 @@ textarea { resize: none; }
 }
 
 @media (min-width: 940px) {
-    .container h1{
+    .container-map h1{
         font-size: 4rem;
         line-height: 4rem;
 }
@@ -687,59 +749,59 @@ textarea { resize: none; }
 
     }
 
-  .input-login[type=text], .input-login[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    align-items: center;
-  }
+    .input-login[type=text], .input-login[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        align-items: center;
+    }
 
-  .input-login label {
-    color: var(--blanco);
-  }
-  
- .button-login {
-    background-color: var(--primario);
-    color: var(--blanco);
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-  }
-  
-  button-login:hover {
-    opacity: 0.8;
-  }
+    .input-login label {
+        color: var(--blanco);
+    }
+    
+    .button-login {
+        background-color: var(--primario);
+        color: var(--blanco);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    button-login:hover {
+        opacity: 0.8;
+    }
 
-  
-  .containerlog {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    margin: auto;
-    padding: 4rem 2rem;
-  }
+    
+    .containerlog {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+        padding: 4rem 2rem;
+    }
 
-  .containerlog label {
-    color: var(--blanco);
-  }
+    .containerlog label {
+        color: var(--blanco);
+    }
 
 
-  /*RESTAURANTES PAGINA*/
+    /*RESTAURANTES PAGINA*/
 
-  .carrusel-pag {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    margin: 2rem;
-}
+    .carrusel-pag {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        margin: 2rem;
+    }
 
 @media (min-width: 940px) {
     .carrusel-pag {
@@ -747,4 +809,78 @@ textarea { resize: none; }
         flex-direction: row;
         gap: 2rem;
     }
+}
+
+.c-item {
+    height: 480px;
+
+}
+
+.c-img {
+    height: 100%;
+
+}
+
+.c-caption {
+    display: flex;
+    flex-direction: column;
+    font-size: .3rem;
+    text-align: center;
+    align-items: center;
+
+}
+
+.c-caption h5 {
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.c-caption p {
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    text-shadow: 1px 1px var(--negro);
+    
+}
+
+.c-caption h5, .c-caption p {
+    position: relative;
+    font-size: 1rem;
+    line-break: auto;
+    text-align: center;
+    bottom: 6rem;
+
+}
+
+@media (min-width: 768px) {
+    .c-caption h5, .c-caption p {
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.fl-c {
+    filter: blur(.1rem);
+    box-shadow:inset 0px 0px;
+    transition: .5s;
+    max-width: 100%;
+}
+
+.fl-c:hover {
+    filter: blur(0rem);
+    transform: scale(1.05);
+    width: auto;
+}
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.center-img h5 {
+    color: var(--blanco);
+    font-style: var(--fuentePrincipal);
+    text-align: center;
 }
