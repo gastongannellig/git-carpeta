@@ -1,0 +1,211 @@
+/*MAIN-SEARCH*/
+
+.search-box {
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+    }
+    
+    .input-search {
+        height: 50px;
+        width: 50px;
+        border-style: none;
+        font-size: 18px;
+        letter-spacing: 2px;
+        outline: none;
+        border-radius: 25px;
+        transition: all .5s ease-in-out;
+        background-color: map-get($color, primario);
+    
+        &::placeholder {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: 100;
+        }
+    }
+    
+    .btn-search {
+        width: 60px;
+        height: 50px;
+        border-style: none;
+        font-size: 20px;
+        font-weight: bold;
+        outline: none;
+        cursor: pointer;
+        border-radius: 50%;
+        position: absolute;
+        right: 0px;
+        color: #ffffff;
+        background-color: map-get($color, primario);
+        pointer-events: painted;
+    
+        &:focus ~ .input-search {
+        width: 300px;
+        border-radius: 0px;
+        background-color: map-get($color, primario);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+        }
+    }
+    
+    .input-search:focus {
+        width: 300px;
+        border-radius: 0px;
+        background-color: map-get($color, primario);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+    }
+    
+    .svg-container svg {
+        transition: .5s;
+    
+        &:hover {
+        background-color: map-get($color, primario);
+        color: map-get($color, secundario);
+        }
+    }
+    
+    /*MAIN-SECTION 1*/
+    
+    .section-principal {
+        @include flex(column, space-evenly, center, none);
+        padding: 2rem;
+    
+        h3 {
+        color: map-get($color, blanco);
+        font-family: $fuentePrincipal;
+        line-height: 2rem;
+        width: 100%;
+        font-size: 2rem;
+        justify-content: center;
+        padding: 0;
+        }
+    }
+    
+    .boton-showme {
+        background: map-get($color, secundario);
+        align-content: center;
+        border-radius: 999px;
+        box-shadow: map-get($color, secundario) 0 10px 20px -10px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-family: $fuentePrincipal;
+        font-size: 2.4rem;
+        font-weight: 300;
+        line-height: 2.8rem;
+        opacity: 1;
+        outline: 0 solid transparent;
+        padding: 8px 18px;
+        touch-action: manipulation;
+        border: 0;
+        transition: .5s;
+    
+        &:hover {
+        background-color: map-get($color, blanco);
+        color: map-get($color, secundario);
+        }
+    }
+    
+    
+    
+    /*MAIN-SECTION 2*/
+    
+    .background-section {
+        height: 100vh;
+        background: no-repeat center center fixed;
+        background-size: cover;
+        background: rgb(255, 255, 255);
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0) 82%, rgba(6, 33, 18, 1) 100%, rgba(6, 33, 18, 1) 100%);
+    }
+    
+    .section-dos {
+        @include flex (column, space-between, center, none);
+        padding: 0 1.3rem;
+    }
+    
+    .guia-mapa {
+        @include flex(column, center, center, 2rem);
+        margin-top: 3rem;
+    
+        a {
+        color: map-get($color, blanco);
+        font-size: 1.5rem;
+        text-decoration: none;
+        list-style-type: none;
+        padding: 0.3rem 0.625rem;
+        transition: .5s;
+    
+        &:hover {
+            color: map-get($color, secundario);
+        }
+        }
+    }
+
+    .gm-style div {
+        border-style: none;
+    }
+    
+    .mapa-busqueda {
+        @include flex(column, center, center, none);
+        position: relative;
+        bottom: 1rem;
+        margin: auto;
+    
+        img {
+        display: flex;
+        width: 2.5rem;
+        position: relative;
+        top: 20px;
+        }
+    }
+
+    
+    .searchbar {
+        background-color: map-get($color, primario);
+        color: map-get($color, blanco);
+        padding: 1rem 0;
+        font-size: 2rem;
+        text-decoration: none;
+        border: none;
+        border-radius: 2rem;
+        width: 90%;
+        text-align: center;
+        border: none;
+        touch-action: manipulation;
+        transition: .5s;
+        border-color: map-get($color, blanco);
+    
+        &:hover {
+        background-color: map-get($color, secundario);
+        color: map-get($color, blanco);
+        }
+    }
+    
+    
+    .mapa-integrado {
+        @include flex(column, center, center, none);
+        position: relative;
+        bottom: 1rem;
+        width: 70%;
+        margin: auto;
+    }
+    
+    
+    .buttonmap-integ {
+        display: flex;
+        width: 50%;
+        background-color: map-get($color, primario);
+        font-size: medium;
+        color: map-get($color, blanco);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+
+        &:hover {
+        @extend .searchbar:hover;
+        }
+    }

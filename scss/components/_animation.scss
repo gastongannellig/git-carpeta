@@ -1,0 +1,38 @@
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+	animation: scale-up-center 0.8s cubic-bezier(0.680, -0.550, 0.265, 1.550) both;
+}
+
+/*
+animation scale-up-center
+ */
+@-webkit-keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+@keyframes scale-up-center {
+0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+}
+100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+}
+
+.animate__animated.animate__pulse {
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    
+    &:hover {
+        animation-play-state: running;
+    }
+}

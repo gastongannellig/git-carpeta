@@ -1,0 +1,19 @@
+
+/*MAIN-INDEX-CARRUSEL*/
+.carrusel-fotos {
+    @include flex (row, center, center, 1rem);
+    width: 30%;
+    margin: 2rem;
+}
+
+.fotos {
+    @include flex (row, center, center, none);
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: transform .5s;
+
+    &:hover {
+    color: map-get($color, secundario);
+    transform: scale(1.05);
+    }
+}

@@ -1,0 +1,49 @@
+/*LOGIN PAGINA*/
+
+    .formlog {
+        @include flex(row, center, none, none);
+        margin: auto;
+    }
+    
+    .input-login {
+        &[type=text], &[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        align-items: center;
+        }
+    
+        label {
+        color: map-get($color, blanco);
+        }
+    }
+    
+    .button-login {
+        background-color: map-get($color, primario);
+        color: map-get($color, blanco);
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+    
+    
+    .containerlog {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+        padding: 4rem 2rem;
+    
+        label {
+        color: map-get($color, blanco);
+        }
+    }
+    

@@ -1,0 +1,56 @@
+/*MAPA PAGINA*/
+
+    .container-map {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+        width: auto;
+        padding: 4rem 2rem;
+    
+        h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        line-height: 1.5rem;
+        font-weight: bold;
+        color: map-get($color, secundario);
+        margin-bottom: 4rem;
+        }
+    }
+    
+    .map-container {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%;
+    
+        iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 10px;
+        }
+    }
+    
+    .buttonmap {
+        display: inline-block;
+        background-color: map-get($color, primario);
+        color: map-get($color, blanco);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 2rem;
+        transition: background-color 0.3s;
+    
+        &:hover {
+        background-color: map-get($color, secundario);
+        color: map-get($color, blanco);
+        }
+    }
+    
+
+    .gm-style {
+        border-style: none;
+    }

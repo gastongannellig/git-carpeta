@@ -1,0 +1,179 @@
+/*HEADER*/
+
+@media (min-width: 940px) {
+    header {
+    flex-direction: row;
+    }
+}
+
+@media (min-width: 940px) {
+    header nav a svg {
+    padding-left: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    }
+}
+
+
+@media (min-width: 940px) {
+    .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+}
+
+
+/*MAIN-INDEX*/
+
+
+@media (min-width: 940px) {
+    .boton-showme {
+    display: flex;
+    width: auto;
+    }
+}
+
+@media (min-width: 940px) {
+    .carrusel-fotos {
+    display: flex;
+    gap: 2rem;
+    }
+}
+
+@media (min-width: 940px) {
+    section-dos {
+    flex-direction: row;
+    }
+}
+
+@media (min-width: 940px) {
+    .guia-mapa {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+    }
+}
+
+@media (min-width: 940px) {
+    .guia-mapa a {
+        color: map-get($color, blanco);
+        }
+    }
+    
+    @media (min-width: 940px) {
+        .mapa-busqueda {
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin: 3rem;
+        padding: 0;
+        }
+    }
+
+    @media (min-width: 940px) {
+        .searchbar {
+        width: auto;
+        }
+    }
+
+    @media (min-width: 940px) {
+        .mapa-integrado {
+        width: 40%;
+        display: flex;
+        position: relative;
+        }
+    }
+
+    @media (min-width: 940px) {
+        .buttonmap-integ {
+        display: inline-block;
+        background-color: map-get($color, primario);
+        width: auto;
+        font-size: 1.5rem;
+        color: map-get($color, blanco);
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+        }
+    }
+    
+
+
+
+        /*BACKGROUND-IMAGE*/
+        @media (min-width: 940px) {
+            .background-image {
+            display: flex;
+            }
+        }
+
+
+/*MAIN-MAPA*/
+
+@media (min-width: 940px) {
+    .container-map {
+    display: flex;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    }
+}
+
+@media (min-width: 940px) {
+    .container-map h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    }
+}
+
+/*MAIN-RESTAURANTES*/
+
+@media (min-width: 940px) {
+    .carrusel-pag {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .c-caption {
+    h5, p {
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+    }
+    }
+}
+
+/*MAIN-CONTACTO*/
+
+@media (min-width: 940px) {
+    .formulario {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    }
+}
+
+@media (min-width: 940px) {
+    .campo textarea {
+    height: 10rem;
+    }
+}
+
+/*FOOTER*/
+
+@media (min-width: 940px) {
+    footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    }
+}

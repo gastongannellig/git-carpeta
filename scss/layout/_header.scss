@@ -1,0 +1,49 @@
+/*HEADER*/
+
+    header {
+        @include flex (column, space-between, center, none);
+        background-color: map-get($color, primario);
+        background-size: cover;
+        padding: 2rem;
+        width: auto;
+    
+        h1 {
+        display: flex;
+        color: map-get($color, blanco);
+        text-align: left;
+        font-size: 3rem;
+        font-family: $fuentePrincipal;
+        padding: 0 1rem;
+        }
+    
+        nav a {
+        color: map-get($color, blanco);
+        font-size: 1.5rem;
+        text-decoration: none;
+        display: inline-block;
+        padding: 0.3rem 0.625rem;
+        transition: .5s;
+    
+        &:hover {
+            background-color: map-get($color, primario);
+            color: map-get($color, secundario);
+        }
+        }
+    
+        h1 img {
+        flex-direction: row;
+        width: 2.8rem;
+        }
+    
+        nav a svg {
+        font-size: 1.5rem;
+        }
+    }
+    
+    .navegacion-principal {
+        @include flex (column, center, center, 2rem);
+    
+        a:nth-child(4) {
+        padding-right: 1.2rem;
+        }
+    }

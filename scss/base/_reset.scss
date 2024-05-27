@@ -1,0 +1,100 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-size: 1.6rem;
+    line-height: 1rem;
+}
+
+p {
+    /*párrafos*/
+    font-size: 1.8rem;
+    font-family: $fuenteSecundaria;
+    color: map-get($color, blanco);
+}    
+
+a {
+    /*enlaces*/
+    text-decoration: none;
+}
+
+img {
+    /*imagenes*/
+    max-width: 100%;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    text-align: center;
+    color: map-get($color, secundario);
+    font-family: $fuentePrincipal;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+
+.center {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (min-width: 940px) {
+    .center {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 940px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+.alinear-derecha {
+    justify-content: flex-end;
+}
+
+
+/* clears the ‘X’ from Internet Explorer */
+    
+input {
+    &[type=search] {
+    &::-ms-clear, &::-ms-reveal {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    }
+
+    &[type="search"] {
+    &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration {
+        display: none;
+    }
+    }
+}
+
+/* clears the ‘X’ from Chrome */
