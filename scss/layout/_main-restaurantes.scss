@@ -14,9 +14,6 @@ header {
     
 
     
-    .c-item {
-        height: 480px;
-    }
     
     .c-img {
         height: 100%;
@@ -26,7 +23,7 @@ header {
         @include flex (column, center, center, none);
         font-size: .3rem;
         
-        h5 {
+        h3 {
         color: map-get($color, secundario);
         font-family: $fuentePrincipal;
         font-weight: bold;
@@ -49,7 +46,6 @@ header {
     
     
     .fl-c {
-        filter: blur(0.1rem);
         box-shadow: inset 0px 0px;
         transition: .5s;
         max-width: 100%;
@@ -73,3 +69,21 @@ header {
         }
     }
     
+
+    .carousel-control-next, .carousel-control-prev {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: 0 !important;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40rem !important;
+        color: #fff;
+        text-align: center;
+        background: 0 0;
+        border: 0;
+        opacity: .5;
+        transition: opacity .15s ease;
+    }

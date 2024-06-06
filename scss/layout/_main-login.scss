@@ -41,6 +41,7 @@
         width: auto;
         margin: auto;
         padding: 4rem 2rem;
+        box-shadow: 0 10px 35px map-get($color, negro);
     
         label {
         color: map-get($color, blanco);

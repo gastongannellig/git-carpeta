@@ -1,19 +1,45 @@
 
 /*MAIN-INDEX-CARRUSEL*/
-.carrusel-fotos {
-    @include flex (row, center, center, 1rem);
-    width: 30%;
-    margin: 2rem;
-}
 
 .fotos {
     @include flex (row, center, center, none);
     touch-action: manipulation;
     cursor: pointer;
     transition: transform .5s;
+    border-radius: 1rem;
+    width: 25rem;
+    height: 100%;
 
     &:hover {
     color: map-get($color, secundario);
     transform: scale(1.05);
+    }
+}
+
+
+.container-c {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+.restaurant-c {
+    padding: 50px 0 150px 0;
+}
+
+.swiper {
+    width: 100%;
+    overflow: visible !important;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 250px;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 23rem;
+        border-radius: 3rem;
     }
 }

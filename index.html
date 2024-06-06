@@ -21,13 +21,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon/site.webmanifest">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 
 
 </head>
 <body>
 
-    <header> <!--header y barra de navegacion-->
+<!--header y barra de navegacion-->
+    <header> 
         <a href="#"><h1 class="animate__animated animate__pulse">GUIDEMTV<img src="./assets/star.svg" alt="star"></h1></a>
 
             <nav class="navegacion-principal">
@@ -51,11 +52,13 @@
                     <input type="text" class="input-search">
                 </div>
             </nav>
-    </header>            
+    </header> <!--header y barra de navegacion-->
+
 
 
     <main>
-        <section class="section-principal background-image"> <!--seccion principal-->
+        <!--seccion principal-->
+        <section class="section-principal background-image"> 
 
                 <h3>¡ENCONTRÁ LOS MEJORES RESTAURANTES Y TIENDAS CERCA DE TU HOTEL! </h3>
                     <div class="center">
@@ -63,19 +66,43 @@
                             <button class="boton-showme scale-up-center" role="button">SHOW ME</button>
                         </a>
                     </div>
+                <!--CARRUSEL-->
+                            <a href="./pages/restaurantes.html"> 
+                                <section class="restaurant-c container-c">
 
-                                <a class="carrusel-fotos" href="./pages/restaurantes.html">
-                                    <img class="fotos" src="./assets/hotel_foto.svg" alt="hotelfoto1">
-                                    <img class="fotos" src="./assets/garcia_foto.svg" alt="fotogarcia">
-                                    <img class="fotos"src="./assets/hotel_foto.svg" alt="hotelfoto2">
-                                </a>
+                                    <div class="swiper mySwiper">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="swiper-slide">
+                                                <img class="fotos" src="./assets/garcia_foto.svg" alt="fotogarcia">
+                                            </div>
+                                            <div class="swiper-slide fotos">
+                                                <img class="fotos" src="./assets/Fellini-italiano-restaurante-alacarta-3.jpg" alt="restaurantefelini">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="fotos" src="./assets/uruguay-natural-1-1.jpg" alt="uruguaynaturalrestaurante">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="fotos" src="./assets/garcia_foto.svg" alt="fotogarcia">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img class="fotos" src="./assets/uruguay-natural-1-1.jpg" alt="uruguaynaturalrestaurante">
+                                            </div>
+                                            
+                                        </div>
+
+                                    </div>
+
+                                </section>
+                            </a> <!--CARRUSEL-->
+
         
-        </section> <!--seccion principal fin-->
+        </section> <!--seccion principal-->
     </main>
 
 
-
-    <section class="section-dos background-section" id="down"> <!--seccion 2-->
+<!--seccion 2-->
+    <section class="section-dos background-section" id="down"> 
                 <nav class="guia-mapa" data-aos="fade-up"
                 data-aos-anchor-placement="top-bottom"> <!--BOTONES QUE INDIQUEN LUGARES EN EL MAPA-->
                     <a href="https://www.google.com/maps/search/Tiendas/@-34.9023242,-56.1658786,14z/data=!3m1!4b1?entry=ttu" target="_blank">TIENDAS</a>
@@ -140,5 +167,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
